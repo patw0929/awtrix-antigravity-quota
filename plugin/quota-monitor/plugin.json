@@ -1,0 +1,13 @@
+{
+  "name": "quota-monitor",
+  "displayName": "Quota Monitor",
+  "version": "1.1.0",
+  "description": "5-hour and weekly quota for the Gemini and Claude/GPT pools, with pace estimates. Side panel in the Antigravity app, quota tools for the agent in the IDE and CLI, and optional AWTRIX clock display.",
+  "logo": "assets/logo.svg",
+  "author": {
+    "name": "patw0929",
+    "url": "https://github.com/patw0929"
+  },
+  "repository": "https://github.com/patw0929/awtrix-antigravity-quota",
+  "homepage": "https://github.com/patw0929/awtrix-antigravity-quota"
+}

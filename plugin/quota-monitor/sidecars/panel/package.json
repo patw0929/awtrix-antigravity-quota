@@ -1,0 +1,7 @@
+{
+  "name": "quota-monitor-panel",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Antigravity quota side panel and AWTRIX push"
+}

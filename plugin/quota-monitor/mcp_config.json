@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quota-monitor": {
+      "command": "node",
+      "args": ["${PLUGIN_ROOT}/sidecars/panel/mcp.mjs"]
+    }
+  }
+}

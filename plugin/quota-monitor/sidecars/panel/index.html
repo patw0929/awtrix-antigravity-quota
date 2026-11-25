@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quota Monitor</title>
+  <link rel="stylesheet" href="/panel.css">
+  <script src="/preload.js"></script>
+</head>
+<body>
+  <header>
+    <div class="title" data-t="title"></div>
+    <div class="meta"><span id="plan"></span><span id="status"></span></div>
+  </header>
+  <main id="pools"></main>
+  <details id="settings">
+    <summary data-t="settings"></summary>
+    <div class="row">
+      <label data-t="show"></label>
+      <div class="seg" id="show">
+        <button data-v="left" data-t="left"></button><button data-v="used" data-t="used"></button>
+      </div>
+    </div>
+    <div class="row">
+      <label data-t="thresholds"></label>
+      <div><input id="warn" type="number" min="1" max="99"> % · <input id="high" type="number" min="1" max="100"> %</div>
+    </div>
+    <h3>AWTRIX</h3>
+    <p class="hint" data-t="awtrixHint"></p>
+    <div class="row">
+      <label for="host" data-t="host"></label>
+      <input id="host" type="text" placeholder="192.168.x.x" spellcheck="false">
+    </div>
+    <div class="row">
+      <label for="push" data-t="push"></label>
+      <input id="push" type="checkbox">
+    </div>
+    <div class="actions">
+      <button id="save" data-t="save"></button>
+      <button id="probe" data-t="probe"></button>
+      <button id="install" data-t="install"></button>
+    </div>
+    <p id="awtrixStatus" class="hint"></p>
+  </details>
+  <script src="/panel.js"></script>
+</body>
+</html>

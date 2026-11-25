@@ -1,0 +1,55 @@
+/* Colours follow the Antigravity theme: preload.js receives the host's CSS
+   variables (--background, --foreground, --card, ...); the fallbacks are a light theme. */
+:root {
+  --qm-bg: var(--background, #f7f7f8);
+  --qm-fg: var(--foreground, #1d1f21);
+  /* Own names are prefixed: the host sets --muted, --card, --border ... inline on <html>,
+     which would override same-named variables here */
+  --qm-muted: var(--muted-foreground, #5d676f);
+  --qm-card-bg: var(--card, #ffffff);
+  --qm-line: var(--card-border, color-mix(in srgb, var(--qm-fg) 12%, transparent));
+  --qm-track: color-mix(in srgb, var(--qm-fg) 10%, transparent);
+  --qm-ok: #3f9e6b; --qm-warn: #c79a1e; --qm-high: var(--error, #cb3d3d);
+}
+* { box-sizing: border-box; }
+body { margin: 0; padding: 14px !important; background: var(--qm-bg); color: var(--qm-fg);
+  font: 13px/1.45 var(--font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif); }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 12px; }
+.title { font-size: 15px; font-weight: 600; }
+.meta { color: var(--qm-muted); font-size: 12px; display: flex; gap: 10px; }
+.meta .bad { color: var(--qm-high); }
+.pool { background: var(--qm-card-bg); border: 1px solid var(--qm-line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
+.pool h2 { font-size: 13px; margin: 0 0 2px; }
+.pool .models { color: var(--qm-muted); font-size: 11px; margin-bottom: 10px; }
+.win { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; margin-top: 10px; }
+.win .label { font-weight: 500; }
+.win .pct { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+.bar { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--qm-track); overflow: hidden; }
+.bar > i { display: block; height: 100%; border-radius: 3px; }
+.win .sub { grid-column: 1 / -1; color: var(--qm-muted); font-size: 11.5px; }
+.win .sub.alert { color: var(--qm-high); }
+svg.spark { width: 100%; height: 44px; margin-top: 10px; display: block; }
+svg.spark .grid { stroke: var(--qm-line); stroke-width: 1; }
+svg.spark .s { fill: none; stroke: var(--qm-ok); stroke-width: 1.5; }
+svg.spark .w { fill: none; stroke: var(--qm-muted); stroke-width: 1.2; stroke-dasharray: 3 2; }
+.legend { color: var(--qm-muted); font-size: 11px; display: flex; gap: 12px; }
+.legend i { display: inline-block; width: 12px; height: 2px; vertical-align: middle; margin-right: 4px; }
+.empty { color: var(--qm-muted); padding: 20px 0; text-align: center; }
+details { border-top: 1px solid var(--qm-line); padding-top: 10px; }
+summary { cursor: pointer; font-weight: 600; }
+h3 { font-size: 13px; margin: 14px 0 4px; }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 8px 0; }
+.hint { color: var(--qm-muted); font-size: 11.5px; margin: 4px 0; }
+input[type=text], input[type=number] { background: var(--qm-bg); color: var(--qm-fg); border: 1px solid var(--qm-line);
+  border-radius: 6px; padding: 4px 6px; font: inherit; }
+input[type=text] { width: 150px; }
+input[type=number] { width: 52px; }
+button { background: var(--qm-card-bg); color: var(--qm-fg); border: 1px solid var(--qm-line); border-radius: 6px;
+  padding: 4px 10px; font: inherit; cursor: pointer; }
+button:disabled { opacity: .5; cursor: default; }
+.seg { display: flex; }
+.seg button { border-radius: 0; }
+.seg button:first-child { border-radius: 6px 0 0 6px; }
+.seg button:last-child { border-radius: 0 6px 6px 0; border-left: 0; }
+.seg button.on { background: var(--qm-fg); color: var(--qm-bg); }
+.actions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
