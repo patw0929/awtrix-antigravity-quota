@@ -4,7 +4,7 @@
 
 Antigravity 外掛：追蹤各額度池的 **5 小時**與**每週**用量、重置倒數、最近一小時的消耗速度，以及「照這速度多久用完」。有 AWTRIX 時鐘（例如 Ulanzi TC002）的話，數字會自動推送過去。
 
-![AWTRIX 時鐘畫面](docs/clock_v21_20261125.png)
+![AWTRIX 時鐘畫面](docs/hub_cover_20261125.gif)
 
 | 用哪個 Antigravity | 你會得到 |
 |---|---|
@@ -53,6 +53,8 @@ agy plugin install https://github.com/patw0929/awtrix-antigravity-quota/tree/mas
 ## AWTRIX 時鐘（選用，例如 Ulanzi TC002）
 
 支援跑 52×16 Berry app 韌體（`/api/v1`）的 AWTRIX 時鐘，例如 Ulanzi TC002。
+
+時鐘 app 也上架在 AWTRIX Hub：[Antigravity Quota](https://awtrix.de/script/TOM7hUZaUv46)。從那裡或從外掛安裝都是同一個 app（`Antigravity-Quota`）。
 
 - 桌面版：面板 →「設定」→ 填時鐘 IP →「儲存」→「安裝／更新時鐘 app」→ 勾「推送到時鐘」→「儲存」
 - IDE／CLI：請 agent 呼叫 `awtrix_configure`（見上）

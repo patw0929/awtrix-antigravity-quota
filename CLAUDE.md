@@ -28,6 +28,8 @@ Antigravity 外掛 Quota Monitor：額度池 × 5h／7d、速度與預估用完�
 - 外掛 1.1.0：桌面版面板、IDE MCP、接手推送都已實測；時鐘 app 2.1.0 已在實機確認
 - 已公開到 GitHub `patw0929/awtrix-antigravity-quota`（公開 repo，預設分支 `master`，MIT License）；README 英文為主＋README.zh-TW.md；commit 作者用使用者自己的 git 身分（git config）
 - 2026-11-25 實測 `agy plugin install https://github.com/patw0929/awtrix-antigravity-quota/tree/master/plugin/quota-monitor`（隔離 HOME）：clone 成功、檔案與 repo 相同、MCP 啟動並回答 `quota_status`
+- 2026-11-25 時鐘 app 上架 AWTRIX Hub：https://awtrix.de/script/TOM7hUZaUv46（分類 Miscellaneous、只限 52×16；封面 `docs/hub_cover_20261125.gif` 是從實機錄的 9 秒循環）。Hub 安裝時 app 名稱＝標題空格換連字號，所以標題必須維持 `Antigravity Quota`
+- GitHub release v1.1.0 附 `quota-monitor-1.1.0.zip`（解開是 `quota-monitor/` 資料夾）；之後改版要同步：plugin.json 版本、mcp.mjs SERVER 版本、時鐘 app @version、Hub 上的程式碼（Edit script）
 - 面板語言：`zh` 開頭顯示正體中文，其餘英文（簡體使用者也會看到正體，使用者決定先不改）
 
 ## 待辦
@@ -36,4 +38,3 @@ Antigravity 外掛 Quota Monitor：額度池 × 5h／7d、速度與預估用完�
 - [ ] 實際用掉配額後，確認面板的速度／預估用完與時鐘顏色變化
 - [ ] 關掉 Antigravity 超過 15 分鐘，確認時鐘右下角紅點
 - [ ] Windows 實測
-- [ ] GitHub release（已採 MIT License）

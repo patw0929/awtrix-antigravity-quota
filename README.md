@@ -4,7 +4,7 @@ English | [正體中文](README.zh-TW.md)
 
 An Antigravity plugin that tracks the **5-hour** and **weekly** limits of each model quota pool: time until reset, how fast you used it over the last hour, and when you will run out at that pace. If you have an AWTRIX clock (e.g. Ulanzi TC002), the numbers are pushed to it automatically.
 
-![AWTRIX clock](docs/clock_v21_20261125.png)
+![AWTRIX clock](docs/hub_cover_20261125.gif)
 
 | Antigravity edition | What you get |
 |---|---|
@@ -53,6 +53,8 @@ Just ask the agent "How much Antigravity quota is left?" or "Set the AWTRIX cloc
 ## AWTRIX clock (optional, e.g. Ulanzi TC002)
 
 Works with AWTRIX clocks running the 52×16 Berry-app firmware (`/api/v1`), for example the Ulanzi TC002.
+
+The clock app is also listed on AWTRIX Hub: [Antigravity Quota](https://awtrix.de/script/TOM7hUZaUv46). Installing it from there or from the plugin gives the same app (`Antigravity-Quota`).
 
 - Desktop app: panel → Settings → enter the clock IP → Save → Install / update clock app → tick Push to clock → Save
 - IDE / CLI: ask the agent to call `awtrix_configure` (see above)
