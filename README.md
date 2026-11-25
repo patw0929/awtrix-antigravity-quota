@@ -37,6 +37,8 @@ Open the panel (desktop app): open any conversation → Toggle Side Panel (top r
 
 ## Side panel (desktop app)
 
+<img src="docs/panel_en_20261125.png" alt="Quota Monitor side panel in the Antigravity desktop app" width="420">
+
 - One card per quota pool (currently Gemini Models, and Claude and GPT models), listing the models that share it
 - A bar each for the 5-hour and weekly windows, showing either remaining or used
 - Time until reset; while you are using it, the last hour's pace, with a red warning if that pace runs out before the reset
@@ -44,6 +46,8 @@ Open the panel (desktop app): open any conversation → Toggle Side Panel (top r
 - Follows the Antigravity theme; English or Traditional Chinese depending on the system language
 
 ## Agent tools (IDE, CLI and desktop app)
+
+<img src="docs/ide_agent_20261125.png" alt="Asking the agent in Antigravity IDE how much quota is left" width="560">
 
 - `quota_status`: remaining 5-hour and weekly quota per pool, time until reset, pace and estimated run-out
 - `awtrix_configure`: set the clock IP, install or update the clock app, turn pushing on or off

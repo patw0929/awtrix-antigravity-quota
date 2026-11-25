@@ -37,6 +37,8 @@ agy plugin install https://github.com/patw0929/awtrix-antigravity-quota/tree/mas
 
 ## 面板（桌面版）
 
+<img src="docs/panel_zh_20261125.png" alt="Antigravity 桌面版的 Quota 側邊面板" width="420">
+
 - 每個額度池一張卡片（目前是 Gemini Models、Claude and GPT models），列出共用這個額度的模型
 - 5 小時與每週各一條進度條，可切換顯示「剩餘」或「已用」
 - 重置倒數；最近一小時有在用時顯示速度，照這速度會在重置前用完的話，用紅字提醒
@@ -44,6 +46,8 @@ agy plugin install https://github.com/patw0929/awtrix-antigravity-quota/tree/mas
 - 顏色跟著 Antigravity 的主題；介面語言依系統（正體中文或英文）
 
 ## agent 工具（IDE、CLI、桌面版都有）
+
+<img src="docs/ide_agent_20261125.png" alt="在 Antigravity IDE 問 agent 額度還剩多少" width="560">
 
 - `quota_status`：各額度池 5 小時／每週剩餘、重置倒數、速度與預估用完
 - `awtrix_configure`：設定時鐘 IP、安裝／更新時鐘 app、開關推送

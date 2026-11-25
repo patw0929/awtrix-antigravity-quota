@@ -30,11 +30,11 @@ Antigravity 外掛 Quota Monitor：額度池 × 5h／7d、速度與預估用完�
 - 2026-11-25 實測 `agy plugin install https://github.com/patw0929/awtrix-antigravity-quota/tree/master/plugin/quota-monitor`（隔離 HOME）：clone 成功、檔案與 repo 相同、MCP 啟動並回答 `quota_status`
 - 2026-11-25 時鐘 app 上架 AWTRIX Hub：https://awtrix.de/script/TOM7hUZaUv46（分類 Miscellaneous、只限 52×16；封面 `docs/hub_cover_20261125.gif` 是從實機錄的 9 秒循環）。Hub 安裝時 app 名稱＝標題空格換連字號，所以標題必須維持 `Antigravity Quota`
 - GitHub release v1.1.0 附 `quota-monitor-1.1.0.zip`（解開是 `quota-monitor/` 資料夾）；之後改版要同步：plugin.json 版本、mcp.mjs SERVER 版本、時鐘 app @version、Hub 上的程式碼（Edit script）
+- 2026-11-25 在 IDE 問 agent「How much Antigravity quota is left?」：自動呼叫 `quota_status`，數字與直接問 MCP 相同。README 附三張截圖（`docs/ide_agent_`、`panel_en_`、`panel_zh_20261125.png`）；英文面板圖是在瀏覽器開 sidecar 頁、把語言設為英文並套深色變數截的。截圖不可露出時鐘 IP
 - 面板語言：`zh` 開頭顯示正體中文，其餘英文（簡體使用者也會看到正體，使用者決定先不改）
 
 ## 待辦
 
-- [ ] 在 IDE 裡實際問 agent 額度（呼叫 `quota_status`）
 - [ ] 實際用掉配額後，確認面板的速度／預估用完與時鐘顏色變化
 - [ ] 關掉 Antigravity 超過 15 分鐘，確認時鐘右下角紅點
 - [ ] Windows 實測
